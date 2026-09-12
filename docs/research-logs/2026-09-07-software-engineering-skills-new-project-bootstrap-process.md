@@ -1,7 +1,9 @@
 # Software Engineering Skills — New Project Bootstrap Process
 
 **Status:** Bootstrap specification  
-**Date:** 7 September 2026
+**Version:** 1.1  
+**Date:** 7 September 2026  
+**Updated:** 12 September 2026
 
 ## 1. Purpose
 
@@ -39,6 +41,7 @@ This bootstrap is governed by:
 - `production-skills/docs/bootstrap/README.md`;
 - `production-skills/docs/bootstrap/new-project-process.md`;
 - `production-skills/docs/bootstrap/domain-research-process.md`;
+- `production-skills/docs/bootstrap/extension-pack-process.md`;
 - `production-skills/docs/bootstrap/shared-abstraction-process.md`;
 - the current Production Skills family specifications;
 - the current mature Video, Narrative and Music Production Skills repositories;
@@ -51,7 +54,26 @@ Initial external research anchors include:
 - NIST SP 800-218, **Secure Software Development Framework (SSDF) v1.1** — https://csrc.nist.gov/pubs/sp/800/218/final
 - Google Engineering Practices, **Code Review** — https://google.github.io/eng-practices/review/
 
-These sources inform the research agenda. They do not predetermine the final skill architecture.
+These are research anchors, not substitutes for the five-book corpus and not predetermined architectural authorities. They are particularly useful during bounded reconnaissance and the later challenge stage.
+
+### Research foundation
+
+The bootstrap follows **Seed → Five → Challenge**:
+
+```text
+domain boundary
+→ bounded reconnaissance + knowledge-coverage map
+→ select exactly five complementary foundational books
+→ directly examine, extract and reconcile the five-book corpus
+→ challenge claims and extend coverage through broader professional research
+→ evidence-qualified software-engineering domain model
+```
+
+Books strengthen professional and empirical research; they do not replace it, define the skill count or limit the wider bibliography.
+
+User-provided books remain in the foundational corpus unless the user explicitly approves their removal, demotion or replacement. Empty corpus slots may be filled without additional approval unless the user imposes a separate approval requirement.
+
+Specification generation defines how the research will run. It does not count an unperformed bibliography, candidate list or proposed corpus as completed research.
 
 ---
 
@@ -60,31 +82,37 @@ These sources inform the research agenda. They do not predetermine the final ski
 The bootstrap must produce:
 
 1. a precise software-engineering domain boundary;
-2. research into real professional software-engineering practice;
-3. a software-change taxonomy and system-context model;
-4. a domain-native workflow and artefact model;
-5. a verification, risk and commitment strategy;
-6. research into existing Agent Skills, engineering tools, CLIs, MCPs and provider capabilities;
-7. an execution-layer decision and gap analysis;
-8. a justified set of core Agent Skills;
-9. decomposed commands where independent testing or reuse is valuable;
-10. a first-class Software Engineering Extension Pack architecture;
-11. an initial Extension Pack catalogue strategy;
-12. a domain-native Extension Pack authoring capability;
-13. five progressive example levels;
-14. three complementary primary examples per level selected through capability coverage;
-15. deterministic, behavioural and semantic evaluation;
-16. benchmark and regression architecture;
-17. six canonical specifications;
-18. a public README following the proven Video Production Skills structure;
-19. an open-source repository scaffold;
-20. Agent Skills installation and selective-installation contracts;
-21. local validation and clean external installation smoke tests;
-22. an implemented end-to-end core vertical;
-23. implemented progressive examples and representative Extension Packs;
-24. optional Pactwright compatibility without runtime dependence;
-25. maturity evidence and registry integration;
-26. cross-domain abstraction candidates based only on repeated evidence.
+2. a software-engineering knowledge-coverage map;
+3. an exactly five-book complementary foundational corpus with access and permission records;
+4. direct per-book extraction, reconciliation and source-to-capability evidence;
+5. broader professional research that challenges the corpus and fills gaps;
+6. an evidence-qualified software-engineering domain model;
+7. a software-change taxonomy and system-context model;
+8. a domain-native workflow and artefact model;
+9. a verification, risk and commitment strategy;
+10. research into existing Agent Skills, engineering tools, CLIs, MCPs and provider capabilities;
+11. an execution-layer decision and gap analysis;
+12. a justified set of core Agent Skills;
+13. decomposed commands where independent testing or reuse is valuable;
+14. a first-class Software Engineering Extension Pack architecture;
+15. an Extension Pack catalogue strategy based on complementary coverage;
+16. explicit P1–P5 research and design stages for each selected Extension Pack;
+17. a domain-native Extension Pack authoring capability;
+18. five progressive example levels;
+19. three complementary primary examples per level selected through capability coverage;
+20. deterministic, behavioural and semantic evaluation;
+21. benchmark and regression architecture;
+22. six canonical specifications;
+23. a public README following the proven Video Production Skills structure;
+24. an open-source repository scaffold;
+25. Agent Skills installation and selective-installation contracts;
+26. local validation and a distinct clean external installation smoke test;
+27. an implemented end-to-end core vertical;
+28. implemented progressive examples and representative Extension Packs;
+29. P6–P7 demonstration, differential evaluation and installation evidence for implemented packs;
+30. optional Pactwright compatibility without runtime dependence;
+31. maturity evidence and registry integration;
+32. cross-domain abstraction candidates based only on repeated implementation evidence.
 
 ---
 
@@ -110,7 +138,7 @@ A central hypothesis is:
 
 > Software engineering production intelligence lies primarily in understanding the existing system, selecting the correct change scope, preserving contracts, choosing appropriate verification, diagnosing failures and improving the codebase without unnecessary change.
 
-This thesis must be tested during Stages 1–8.
+This thesis must be tested through the research and modelling stages before it becomes a core architecture rule.
 
 ---
 
@@ -235,6 +263,10 @@ For software intended to be released or deployed, the project should preserve a 
 
 The project must distinguish deployability from actually operating production systems.
 
+## Research before architecture
+
+The core skill architecture must follow the evidence-qualified software-engineering model. Do not use the selected books as a five-skill template, and do not let current coding-agent APIs define the discipline.
+
 ---
 
 # 6. Bootstrap Flow
@@ -242,45 +274,50 @@ The project must distinguish deployability from actually operating production sy
 ```text
 PROJECT IDEA
     ↓
+0. Confirm Bootstrap Workspace
+    ↓
 1. Define Project Goal and Domain Boundary
     ↓
-2. Research Professional Software Engineering Practice
+2. Seed — Map Knowledge Coverage and Select Five Complementary Books
     ↓
-3. Model Software Change Types, Contracts and System Context
+3. Five — Extract and Reconcile the Five-Book Corpus
     ↓
-4. Map the Engineering Workflow and Artefacts
+4. Challenge — Broader Professional Software-Engineering Research
     ↓
-5. Define Verification, Risk and Commitment Strategy
+5. Model Software Change Types, Contracts and System Context
     ↓
-6. Research Existing AI Skills, Tools and Providers
+6. Map the Engineering Workflow and Artefacts
     ↓
-7. Choose the Execution Layer
+7. Define Verification, Risk and Commitment Strategy
     ↓
-8. Gap Analysis
+8. Research Existing AI Skills, Tools and Providers
     ↓
-9. Design Core Skills and Commands
+9. Choose the Execution Layer
     ↓
-10. Design Software Engineering Extension Packs
+10. Gap Analysis
     ↓
-11. Design Five Progressive Example Levels
+11. Design Core Skills and Commands
     ↓
-12. Design Evals, Benchmarks and Regression Fixtures
+12. Design Software Engineering Extension Packs
+       ├─ Curate complementary catalogue coverage
+       └─ For each selected pack: P1 → P2 → P3 → P4 → P5
     ↓
-13. Generate Six Canonical Specifications
+13. Design Five Progressive Example Levels
     ↓
-14. Design the Public README
+14. Design Evals, Benchmarks and Regression Fixtures
     ↓
-15. Cross-Project Review
+15. Generate Six Canonical Specifications
     ↓
-16. Scaffold the Repository
+16. Design the Public README
     ↓
-17. Implement the Core Vertical
+17. Scaffold the Production Repository
     ↓
-18. Implement Progressive Coverage and Extension Packs
+18. Implement the Core Vertical
     ↓
-19. Configure and Validate Skill Installation
+19. Implement Progressive Coverage and Extension Packs
+       └─ For implemented packs: P6 → P7
     ↓
-20. Clean External Installation Smoke Test
+20. Validate Installation and Repository Integrity
     ↓
 21. Optional Pactwright Integration
     ↓
@@ -291,15 +328,58 @@ PROJECT IDEA
 MATURE SOFTWARE ENGINEERING SKILLS PROJECT
 ```
 
-Stages may be refined as domain research exposes missing responsibilities, but later sessions should not collapse major decisions merely to reduce stage count.
+The repository already satisfies Stage 0 structurally. It currently exists as a minimal bootstrap workspace rather than a production scaffold.
+
+## Stage execution contract
+
+Every stage is a standalone task.
+
+For each stage:
+
+1. read the stage specification and required prior research logs;
+2. perform the complete substantive work required by that stage;
+3. persist detailed evidence and decisions under `docs/research-logs/`;
+4. verify every exit criterion;
+5. record blockers, unresolved evidence and required decisions explicitly;
+6. commit the completed stage and its evidence;
+7. only then begin a dependent stage.
+
+Do not replace stage work with a summary. Do not merge stages merely to move faster. A bibliography is not evidence of book extraction. Silence is never approval for a required supplied-book substitution. Inadequate source access blocks extraction rather than justifying invented findings.
+
+Existing adequate research may be reused after its persisted evidence, source coverage and applicability have been reviewed. Reuse should prevent unnecessary repetition, not weaken a stage gate.
 
 ---
 
-# 7. Stage 1 — Define Project Goal and Domain Boundary
+# 7. Stage 0 — Confirm Bootstrap Workspace
 
 ## Purpose
 
-Define what software engineering production responsibility the repository owns before discussing individual skills.
+Confirm that the minimal repository exists as the durable store for staged bootstrap research.
+
+Target bootstrap shape:
+
+```text
+software-engineering-skills/
+├── README.md
+└── docs/
+    └── research-logs/
+        ├── README.md
+        └── 2026-09-07-software-engineering-skills-new-project-bootstrap-process.md
+```
+
+Do not create production surfaces such as `skills/`, `examples/`, `benchmarks/`, `tests/`, Extension Pack directories or production CI merely because the repository exists.
+
+## Exit criteria
+
+The repository is writable, `docs/research-logs/` is the authoritative bootstrap record, and repository creation is not confused with `scaffolded` maturity.
+
+---
+
+# 8. Stage 1 — Define Project Goal and Domain Boundary
+
+## Purpose
+
+Define what software engineering production responsibility the repository owns before discussing individual skills or selecting foundational sources.
 
 ## Questions to resolve
 
@@ -338,7 +418,7 @@ Pactwright lifecycle governance
 - Production Skills family specifications;
 - project-family research logs;
 - the intended `software-engineering-skills` project idea;
-- initial professional-practice sources.
+- initial professional-practice anchors.
 
 ## Activities
 
@@ -347,6 +427,7 @@ Pactwright lifecycle governance
 - identify intended users;
 - identify cross-domain handoffs;
 - identify important human decisions and irreversible/high-risk changes;
+- define initial quality dimensions;
 - separate reusable engineering practice from one repository's conventions.
 
 ## Expected outputs
@@ -368,7 +449,7 @@ A defensible initial boundary.
 
 ## Remains provisional
 
-Exact core skill split, pack dimensions and implementation tooling.
+Exact workflow, core skill split, book corpus, pack dimensions and implementation tooling.
 
 ## Exit criteria
 
@@ -376,15 +457,233 @@ The project can explain in one page what it owns and why those responsibilities 
 
 ---
 
-# 8. Stage 2 — Research Professional Software Engineering Practice
+# 9. Stage 2 — Seed: Map Knowledge Coverage and Select Five Complementary Books
 
 ## Purpose
 
-Model software engineering from durable professional practice rather than current coding-agent capabilities.
+Establish the foundational software-engineering research corpus without mistaking popular books, supplied books or current AI capabilities for complete domain coverage.
+
+Apply `production-skills/docs/bootstrap/domain-research-process.md` directly.
+
+## Inputs
+
+- completed Stage 1 domain charter;
+- any user-provided book titles or files;
+- existing persisted source-selection evidence;
+- bounded authoritative reconnaissance sufficient to map the discipline.
+
+## Bounded reconnaissance
+
+Use strong professional and authoritative material only far enough to create a knowledge-coverage map and compare book contributions. Do not perform the full broader professional research of Stage 4 here.
+
+The coverage map should test likely dimensions such as:
+
+```text
+requirements and acceptance
+software design and architecture
+construction and code quality
+maintenance and evolution
+brownfield understanding
+refactoring and technical debt
+testing and test quality
+debugging and root-cause diagnosis
+code review
+API and contract evolution
+data/schema evolution
+security engineering
+performance and concurrency
+reliability and resilience
+continuous delivery
+observability and operability
+configuration and dependency management
+engineering economics and change scope
+human review and commitment points
+```
+
+These are research dimensions, not mandatory book slots.
+
+## Corpus selection
+
+Select **exactly five distinct books** as the foundational corpus.
+
+When zero to five books are supplied:
+
+1. assess their combined contribution against the coverage map;
+2. research a broader candidate pool rather than only enough books to fill empty slots;
+3. retain supplied books by default;
+4. fill empty slots with complementary sources;
+5. choose the five-book combination for combined coverage, useful depth and contrasting perspective rather than individual popularity.
+
+Assess candidates for:
+
+```text
+relevance to owned responsibilities
+coverage and depth
+practical contribution to engineering decisions
+credibility and limitations
+useful perspective or challenge
+currency versus durable principles
+source access
+material overlap
+remaining gaps
+```
+
+Useful overlap may provide depth or competing approaches. Do not invent overlap percentages or weighted authority scores without a defensible measurement method.
+
+## Supplied-book permission rule
+
+A user-provided book remains a corpus member unless the user explicitly authorises its removal, replacement or demotion.
+
+Recommend substitution only when the expected improvement is material. Record:
+
+```text
+book proposed for removal
+replacement
+coverage / overlap problem
+supporting evidence
+expected gain
+potential loss
+alternatives
+approval status
+```
+
+If approval is declined, retain the book and address remaining gaps through the other corpus slots and Stage 4 research. If approval is unanswered, selection is incomplete. If more than five books are supplied, propose the foundational five and request permission to exclude the others from foundational status.
+
+## Source-access register
+
+For every selected book record:
+
+```text
+title and author
+edition / publication year
+provided or selected origin
+source identifier/location suitable for internal use
+access status
+intended contribution
+material actually examined so far
+reading limitations
+```
+
+Use access states:
+
+```text
+full text available
+relevant excerpts available
+secondary material only
+unavailable
+```
+
+Selection and extraction are separate. Full-text availability does not mean a book has been examined.
+
+## Expected outputs
+
+```text
+software-engineering knowledge-coverage map
+candidate-book comparison
+exactly five selected books
+selected/rejected rationale
+material-overlap analysis
+remaining domain gaps
+source-access register
+supplied-book substitution decision log
+corpus revision identifier
+```
+
+## Exit criteria
+
+Exactly five complementary books are selected; all required substitution decisions are resolved; remaining gaps are explicit; and source-access needs are recorded. Missing access may remain an explicit acquisition need, but Stage 3 cannot complete until all five can be meaningfully examined for their intended contributions.
+
+---
+
+# 10. Stage 3 — Five: Extract and Reconcile the Five-Book Corpus
+
+## Purpose
+
+Directly examine the five selected books, extract traceable software-engineering knowledge and reconcile the corpus before broader research challenges it.
+
+A title-level summary, model memory, publisher description, bibliography or secondary article is not completion evidence.
+
+## Per-book extraction
+
+For material findings record:
+
+| Field | Required content |
+|---|---|
+| Source | Book, edition and identifiable chapter, section, page or other stable location actually examined |
+| Problem and concept | Independently expressed principle, method or heuristic |
+| Applicability | Context, assumptions, prerequisites and limitations |
+| Production behaviour | Engineering decision, workflow step, artefact or responsibility affected |
+| Evaluation | Metrics, evidence or evaluation criteria suggested |
+| Failure and repair | Misuse, failure conditions and correction strategy |
+| Relationships | Support, overlap, tension or contradiction with other sources |
+| Disposition | Retain, merge, adapt, qualify, reject or research further |
+
+Map useful findings as:
+
+```text
+source finding
+→ provisional software-engineering capability
+→ production responsibility
+→ workflow / command implication
+→ evaluation criterion
+→ candidate benchmark case
+```
+
+Do not create one skill per book. A selected book may ultimately contribute little to the core; record that result rather than forcing it into the architecture.
+
+## Reconciliation
+
+Analyse:
+
+```text
+reinforcing findings
+overlapping methods
+competing assumptions
+context-dependent alternatives
+contradictions
+important topics absent from the corpus
+claims needing empirical or current-practice verification
+```
+
+Several books repeating a claim do not automatically provide independent corroboration.
+
+## Publication boundary
+
+Do not commit supplied books, private source locations, substantial copied text, reconstructed chapters or proprietary examples. Publish independently expressed synthesis and concise bibliographic/source-location references sufficient for traceability.
+
+## Expected outputs
+
+- per-book research findings;
+- reading-coverage records;
+- source-to-capability matrix;
+- overlap/conflict analysis;
+- provisional software-engineering capability model;
+- claims/gaps requiring Stage 4 challenge.
+
+## Exit criteria
+
+All five books have been meaningfully examined for their intended contributions; material findings are traceable to actual examined locations; conflicts and limitations are explicit; and inadequate source access is not hidden by secondary summaries.
+
+---
+
+# 11. Stage 4 — Challenge: Broader Professional Software-Engineering Research
+
+## Purpose
+
+Challenge the book-derived model, fill gaps against the original domain boundary and model software engineering from durable professional practice rather than current coding-agent capabilities.
+
+This stage incorporates the original professional-practice research responsibility, but now uses the five-book model as a hypothesis to test rather than as an architectural authority.
+
+## Research questions
+
+Answer both:
+
+1. Which book-derived claims and methods are defensible, under what conditions, and with what limitations?
+2. Which important software-engineering responsibilities, risks or perspectives are absent from the corpus?
 
 ## Research areas
 
-Use SWEBOK V4 as a map, then investigate modern practice across at least:
+Use SWEBOK V4 as a map and investigate current authoritative practice across at least:
 
 ```text
 requirements and acceptance
@@ -406,6 +705,8 @@ technical debt and refactoring
 ```
 
 Do not assume every area belongs in the final core.
+
+Use current authoritative and empirical sources where applicable, including relevant standards, primary research, official documentation and specialist practitioner material. The DORA, NIST SSDF and Google Engineering Practices anchors are candidate inputs here, not unquestioned rules.
 
 ## Study real workflows
 
@@ -442,34 +743,46 @@ handoffs
 quality criteria
 ```
 
+Seek supporting and contrary evidence. Investigate failure conditions and counterexamples rather than confirming the corpus. Verify change-sensitive claims against current authoritative sources.
+
+## Evidence qualification
+
+Keep disposition separate from evidential standing. Distinguish:
+
+```text
+supported finding
+qualified/context-dependent method
+practical heuristic
+disputed claim
+unresolved question
+rejected idea
+```
+
+An unresolved claim must not silently become an unconditional core rule.
+
 ## Expected outputs
 
-- professional-practice research notes;
-- terminology map;
-- role/responsibility map;
+- professional-practice research log;
+- terminology and role/responsibility map;
+- supporting and contrary evidence;
+- book-claim dispositions;
+- gap analysis against the Stage 1 boundary;
 - software change lifecycle candidates;
 - failure and repair taxonomy candidates;
-- evidence-quality model.
-
-## Decisions made
-
-Which practices are durable enough to encode as reusable software-engineering production intelligence.
-
-## Remains provisional
-
-Repository workflow and exact skill boundaries.
+- evidence-quality model;
+- evidence-qualified software-engineering capability model.
 
 ## Exit criteria
 
-The production model can be justified from professional practice without referring to a particular LLM or coding agent.
+Material book-derived findings have been assessed; important domain gaps are addressed or bounded; unresolved claims remain explicit; and the production model can be justified from software-engineering evidence without referring to a particular LLM, coding agent or book corpus alone.
 
 ---
 
-# 9. Stage 3 — Model Software Change Types, Contracts and System Context
+# 12. Stage 5 — Model Software Change Types, Contracts and System Context
 
 ## Purpose
 
-Introduce the domain-specific model that UI/UX or creative production projects do not need: software work almost always changes a system with existing behavioural and technical contracts.
+Introduce the domain-specific model that creative production projects do not need: software work usually changes a system with existing behavioural and technical contracts.
 
 ## Change taxonomy to research
 
@@ -545,11 +858,11 @@ The project can distinguish different software change classes and explain what m
 
 ---
 
-# 10. Stage 4 — Map the Engineering Workflow and Artefacts
+# 13. Stage 6 — Map the Engineering Workflow and Artefacts
 
 ## Purpose
 
-Derive the smallest credible end-to-end engineering workflow.
+Derive the smallest credible end-to-end engineering workflow from the evidence-qualified domain model.
 
 ## Candidate workflow
 
@@ -623,7 +936,7 @@ A small feature or defect repair can be traced end to end without inventing miss
 
 ---
 
-# 11. Stage 5 — Define Verification, Risk and Commitment Strategy
+# 14. Stage 7 — Define Verification, Risk and Commitment Strategy
 
 ## Purpose
 
@@ -698,7 +1011,7 @@ The project can explain why a one-line local fix and a schema migration should n
 
 ---
 
-# 12. Stage 6 — Research Existing AI Skills, Tools and Providers
+# 15. Stage 8 — Research Existing AI Skills, Tools and Providers
 
 ## Purpose
 
@@ -819,7 +1132,7 @@ The project can justify why each native capability is not better solved by compo
 
 ---
 
-# 13. Stage 7 — Choose the Execution Layer
+# 16. Stage 9 — Choose the Execution Layer
 
 ## Purpose
 
@@ -874,7 +1187,7 @@ The architecture can replace an execution tool without redesigning the engineeri
 
 ---
 
-# 14. Stage 8 — Gap Analysis
+# 17. Stage 10 — Gap Analysis
 
 ## Purpose
 
@@ -938,7 +1251,7 @@ Every proposed native skill responsibility maps to an evidenced gap.
 
 ---
 
-# 15. Stage 9 — Design Core Skills and Commands
+# 18. Stage 11 — Design Core Skills and Commands
 
 ## Purpose
 
@@ -1018,17 +1331,36 @@ The smallest skill set can cover the target workflow without turning commands in
 
 ---
 
-# 16. Stage 10 — Design Software Engineering Extension Packs
+# 19. Stage 12 — Design Software Engineering Extension Packs
 
 ## Purpose
 
 Create first-class reusable specialisations that materially alter software-engineering behaviour without bloating the core.
 
-## Pack dimensions to investigate
+Apply `production-skills/docs/bootstrap/extension-pack-process.md` at two levels:
 
-### Language / runtime grammar
+1. curate complementary catalogue coverage;
+2. run P1–P5 for every pack selected for evidence-qualified specification.
 
-Examples to research:
+Catalogue size is not fixed by the five-book requirement.
+
+## Catalogue curation
+
+Research or generate a broader candidate pool and compare candidates through a combined capability-coverage matrix. Classify each need as:
+
+```text
+existing pack covers it → reuse
+one-project detail → project instructions
+broad domain responsibility → core-improvement candidate
+reusable specialised behaviour → create/refine a pack
+insufficient value/evidence → defer or reject
+```
+
+Assess practical reuse, distinct production behaviour, depth, evaluation feasibility, overlap with the core and neighbouring packs, and combined catalogue coverage.
+
+### Pack dimensions to investigate
+
+#### Language / runtime grammar
 
 ```text
 TypeScript / Node.js
@@ -1039,9 +1371,7 @@ Go
 Rust
 ```
 
-### Framework / ecosystem grammar
-
-Examples:
+#### Framework / ecosystem grammar
 
 ```text
 Spring Boot
@@ -1052,9 +1382,7 @@ FastAPI
 Kubernetes-native services
 ```
 
-### Architecture grammar
-
-Examples:
+#### Architecture grammar
 
 ```text
 HTTP API
@@ -1066,9 +1394,7 @@ serverless
 mobile applications
 ```
 
-### Engineering-risk specialisation
-
-Examples:
+#### Engineering-risk specialisation
 
 ```text
 secure-development
@@ -1079,26 +1405,103 @@ backward-compatible API evolution
 high-reliability services
 ```
 
-These are candidate dimensions. Research must determine which belong in Extension Packs, which should remain external specialist skills, and which are merely project-specific instructions.
+These are candidate dimensions. Research must determine which belong in Extension Packs, which should remain external specialist skills, which indicate a core gap and which are merely project-specific instructions.
 
-## Pack contract
+## Per-pack P1–P5 research and design
 
-A valid pack should define:
+Each selected pack must run the following as **distinct substantive stages with separate committed research evidence**.
+
+### P1 — Define the specialisation and core baseline
+
+Define:
+
+```text
+intended use and non-use
+reusable production need
+relevant core skills
+core revision / baseline status
+expected behavioural difference from core
+what must remain stable
+adjacent boundaries
+why ordinary project instructions or an existing pack are insufficient
+provisional evaluation questions
+```
+
+The baseline must represent the real production need rather than an artificially vague brief designed to make the pack look useful.
+
+### P2 — Select five complementary foundational books
+
+Select **exactly five justified books for the pack** using the same permission and access rules as Stage 2.
+
+Books may reuse relevant examined evidence from the core corpus or another pack. There is no requirement for five new books. Reuse requires a pack-specific contribution assessment; a shared citation does not itself prove specialist applicability.
+
+For supplied pack books, removal, replacement or demotion still requires explicit permission.
+
+Produce:
+
+```text
+pack knowledge-coverage map
+candidate comparison
+five-book pack corpus
+source-access register
+source-reuse decisions
+substitution approvals / pending decisions
+remaining specialist gaps
+```
+
+### P3 — Extract and reconcile specialised knowledge
+
+Meaningfully examine all five books for their pack-specific contribution, either directly or through adequate reviewed direct-source evidence whose applicability is verified.
+
+Map:
+
+```text
+source finding + location
+→ applicability to specialisation
+→ change to a core-skill decision
+→ observable workflow / artefact effect
+→ evaluation criterion
+→ failure / repair case
+```
+
+Do not automatically inherit the core bibliography or one pack's profile into another pack.
+
+### P4 — Challenge claims and extend coverage
+
+Use independent professional, empirical, standards, official and practitioner evidence to challenge the extracted specialist guidance and fill gaps.
+
+Record separate:
+
+```text
+disposition: retain / merge / adapt / qualify / reject / investigate further
+evidential standing: supported / context-dependent / heuristic / disputed / unresolved
+```
+
+Current, change-sensitive ecosystem practices must be verified against current authoritative sources.
+
+### P5 — Specify behaviour and evaluation
+
+Define operational pack behaviour:
 
 ```text
 scope
-activation conditions
+activation
+hard constraints and soft defaults
 engineering conventions
-architecture or ecosystem assumptions
-core-skill behaviour changed
+architecture / ecosystem assumptions
+core-skill decisions changed
 verification changes
 quality criteria
-references
+precedence
 incompatible assumptions
-example prompt
-showcase repository/fixture
-benchmark cases
+source-to-behaviour-to-test mapping
+showcase design + exact prompt
+independent reuse brief/fixture
+acceptance cases
+implementation plan
 ```
+
+Evaluation design must state what should change, what must remain stable, intentional traits to preserve and genuine defects still to reject.
 
 ## Precedence
 
@@ -1106,16 +1509,16 @@ Target common precedence:
 
 ```text
 explicit project instructions
-→ accepted architecture / public contracts
+→ accepted architecture / public contracts / approved work
 → selected Software Engineering Extension Pack
 → core software-engineering defaults
 ```
 
-A pack must not silently override repository conventions or accepted project architecture.
+A pack must not silently override repository conventions, accepted project architecture or stronger explicit instructions.
 
 ## Differential evaluation
 
-Every implemented pack must prove:
+Every implemented pack must ultimately prove:
 
 ```text
 core
@@ -1123,39 +1526,36 @@ vs
 core + pack
 ```
 
-The comparison should detect meaningful engineering differences, not only vocabulary changes.
+using the same substantive brief and comparable conditions. The comparison should detect meaningful engineering differences, not vocabulary changes.
 
 ## Pack authoring capability
 
-The project should eventually expose a domain-native authoring skill or equivalent workflow:
+The project should expose a domain-native authoring skill or equivalent workflow. Extend that capability as the process evolves rather than creating a competing generic pack-authoring runtime.
 
-```text
-inspect catalogue
-→ determine if an existing pack is sufficient
-→ research authoritative ecosystem practice
-→ define specialisation boundary
-→ define core-skill effects
-→ define verification and quality changes
-→ implement pack
-→ build showcase fixture + exact prompt
-→ create behavioural evals
-→ compare against core
-→ validate and catalogue
-```
+## Expected outputs
+
+- catalogue candidate pool and coverage matrix;
+- selected/deferred/rejected pack rationale;
+- pack model and precedence rules;
+- P1–P5 research logs for each selected pack;
+- five-book corpus and evidence status per selected pack;
+- source-to-behaviour-to-test mapping;
+- planned showcase/evaluation design;
+- domain-native pack-authoring contract.
 
 ## Exit criteria
 
-The project can explain what makes a Software Engineering Extension Pack different from a framework prompt, project README or external specialist skill.
+The project can explain what makes a Software Engineering Extension Pack different from a framework prompt, project README or external specialist skill. Selected packs have evidence-qualified, testable production profiles; planned catalogue entries are not misrepresented as researched or ready. P6–P7 are deferred until the relevant core implementation exists.
 
 ---
 
-# 17. Stage 11 — Design Five Progressive Example Levels
+# 20. Stage 13 — Design Five Progressive Example Levels
 
 ## Purpose
 
 Demonstrate progressively broader software-engineering responsibility through real repository changes.
 
-Do not select the final examples by intuition alone.
+Do not select final examples by intuition alone.
 
 ## Level model to validate
 
@@ -1274,8 +1674,8 @@ repair an incident class and convert it into permanent regression protection
 For each level:
 
 1. derive the capabilities the level must demonstrate;
-2. research or generate at least 8–12 candidate examples;
-3. represent each candidate as a small reproducible repository or fixture;
+2. research or generate a broader candidate pool, normally at least 8–12 credible candidates;
+3. represent each candidate as a small reproducible repository or fixture where feasible;
 4. map candidates against a capability-coverage matrix;
 5. remove examples that test substantially the same engineering behaviour;
 6. select the three examples whose **combined coverage** best demonstrates the level;
@@ -1311,7 +1711,7 @@ The planned 15 examples demonstrate substantially different engineering problems
 
 ---
 
-# 18. Stage 12 — Design Evals, Benchmarks and Regression Fixtures
+# 21. Stage 14 — Design Evals, Benchmarks and Regression Fixtures
 
 ## Purpose
 
@@ -1447,7 +1847,10 @@ repository-convention preservation
 pack-aware verification
 core-vs-pack differential behaviour
 negative/incompatible cases
+independent reuse beyond the showcase
 ```
+
+The P5 source-to-behaviour-to-test mapping should feed these cases directly.
 
 ## Exit criteria
 
@@ -1455,7 +1858,7 @@ The benchmark can detect incorrect code, poor engineering behaviour and meaningf
 
 ---
 
-# 19. Stage 13 — Generate Six Canonical Specifications
+# 22. Stage 15 — Generate Six Canonical Specifications
 
 Generate:
 
@@ -1468,6 +1871,8 @@ docs/
 ├── 05-software-engineering-extension-packs-spec.md
 └── 06-software-engineering-extension-pack-catalogue.md
 ```
+
+Generate these specifications from the persisted research logs rather than reconstructing bootstrap decisions from conversation memory.
 
 ## Spec 01 — System
 
@@ -1544,7 +1949,7 @@ Owns:
 
 ```text
 pack model
-pack dimensions
+specialisation dimensions
 activation
 precedence
 core-skill integration
@@ -1552,31 +1957,51 @@ verification changes
 pack-aware evaluation
 pack packaging
 pack authoring
+source/evidence expectations
 boundaries
 ```
 
 ## Spec 06 — Extension Pack Catalogue
 
-Owns:
+Owns the actual curated entries, not merely a list of possible pack names.
+
+For each pack record:
 
 ```text
-curated initial packs
-selection rationale
-engineering profiles
-authoritative references
-showcase fixtures
-exact prompts
-pack-specific evaluation
-maturity/status
+identity
+intended use and non-use
+catalogue-selection rationale
+complementary contribution
+core baseline
+expected behavioural difference
+five-book corpus
+contribution of each book
+research-log references
+source-access / reading limitations
+unresolved questions
+hard constraints / soft defaults / qualified methods
+core-skill effects
+source-to-behaviour-to-test mapping
+showcase fixture and exact prompt
+actual output status
+independent reuse case
+research status
+implementation status
+evaluation status
+clean-installation status
+readiness
+limitations / compatibility / migration notes
 ```
+
+Research, implementation, evaluation and readiness must be tracked independently. A listed entry, completed bibliography, directory or prompt does not imply a researched or ready-to-use pack.
 
 ## Exit criteria
 
-Implementation can proceed without inventing core engineering architecture in code.
+Implementation can proceed without inventing core engineering architecture in code, and Specification 06 distinguishes planned catalogue coverage from evidence-backed readiness.
 
 ---
 
-# 20. Stage 14 — Design the Public README
+# 23. Stage 16 — Design the Public README
 
 Follow the proven Video Production Skills public structure while remaining software-native.
 
@@ -1605,9 +2030,9 @@ contributing
 licence
 ```
 
-The README must show actual repository changes and verification evidence, not only describe hypothetical capabilities.
+The README design may refer to planned examples, but the mature README must show actual repository changes and verification evidence rather than hypothetical capability claims.
 
-Every primary example should link to:
+Every implemented primary example should link to:
 
 ```text
 starting repository/fixture
@@ -1619,46 +2044,11 @@ explanation of engineering behaviour demonstrated
 
 ## Exit criteria
 
-A developer can understand, install and try the project from the README without reading the internal specs first.
+A developer can understand how the eventual product will be installed and used, and the README design has a clear path from bootstrap status to measured public claims.
 
 ---
 
-# 21. Stage 15 — Cross-Project Review
-
-Only after the software-engineering architecture exists, compare it with mature Video, Narrative, Music and UI/UX Production Skills.
-
-Look for independently reproduced needs such as:
-
-```text
-cheap uncertainty reduction
-approved-decision preservation
-smallest-sufficient correction
-progressive examples
-skill-local commands
-Extension Pack semantics
-pack differential evaluation
-clean installation testing
-```
-
-Record shared-abstraction candidates using the family evidence format.
-
-Do not immediately extract:
-
-```text
-universal workflow engine
-universal artefact graph
-universal evaluator
-universal pack interpreter
-universal command runtime
-```
-
-## Exit criteria
-
-Cross-domain similarities are documented without weakening software-native terminology or responsibilities.
-
----
-
-# 22. Stage 16 — Scaffold the Repository
+# 24. Stage 17 — Scaffold the Production Repository
 
 Create only structure justified by the specifications.
 
@@ -1671,25 +2061,26 @@ software-engineering-skills/
 ├── CONTRIBUTING.md
 ├── CHANGELOG.md
 ├── docs/
+│   └── research-logs/       # retained as the historical design record
 ├── skills/
 ├── examples/
 ├── benchmarks/
 ├── tests/
-├── tools/                  # only if deterministic helpers are justified
+├── tools/                   # only if deterministic helpers are justified
 └── .github/
 ```
 
-Add Extension Pack surfaces only when they contain working content.
+Add Extension Pack surfaces only when they contain working or immediately useful specified content.
 
 Do not create empty directories for symmetry with creative repositories.
 
 ## Exit criteria
 
-A contributor can locate skills, examples, benchmarks and specifications with no speculative architecture in the scaffold.
+A contributor can locate skills, examples, benchmarks and specifications with no speculative architecture in the scaffold. This is the first stage that should promote the repository to `scaffolded` maturity.
 
 ---
 
-# 23. Stage 17 — Implement the Core Vertical
+# 25. Stage 18 — Implement the Core Vertical
 
 Implement the smallest subset of core skills and commands needed to complete one representative Level 1 change in an external fixture repository.
 
@@ -1717,7 +2108,7 @@ Installed skills can complete one realistic software change end to end and the b
 
 ---
 
-# 24. Stage 18 — Implement Progressive Coverage and Extension Packs
+# 26. Stage 19 — Implement Progressive Coverage and Extension Packs
 
 Expand from the proven vertical.
 
@@ -1725,59 +2116,98 @@ Implement the selected 15 primary examples progressively rather than all at once
 
 Introduce representative Extension Packs only after the core works without them.
 
-For each implemented pack prove:
+For every implemented pack, complete the remaining Extension Pack bootstrap stages.
+
+## P6 — Implement and demonstrate
+
+Use the domain's existing pack-authoring capability where available.
+
+Implement a self-contained pack with concise relevant guidance and source provenance. Runtime behaviour must not depend on the original books, central research logs or another pack.
+
+Create and run:
+
+```text
+realistic showcase fixture
+exact copyable prompt
+actual generated/changed artefacts
+execution record
+behavioural fixtures
+local validation
+```
+
+A prompt or pack directory alone is not a demonstration.
+
+## P7 — Evaluate, validate installation and catalogue
+
+Compare:
+
+```text
+core-only
+vs
+core + pack
+```
+
+on the same substantive brief, constraints and comparable execution conditions. Record relevant core/pack revisions, prompts, model/tool versions, settings, resource limits and deviations.
+
+Where useful, also compare against core plus ordinary project-specific instructions to determine whether packaging adds reusable depth, consistency or reduced prompting burden.
+
+Test:
+
+```text
+activation and non-activation
+intended specialised behaviour
+precedence
+preservation of repository conventions and approved work
+pack-aware evaluation without hiding defects
+negative/incompatible cases
+the independent reuse brief/fixture
+clean consumer-project installation and use
+```
+
+Preserve failed and inconclusive results. Do not infer general superiority from one favourable sample.
+
+## Proof required for each implemented pack
 
 ```text
 core works without pack
 core + pack changes intended engineering behaviour
 repository/project instructions outrank pack defaults
-accepted architecture/contracts outrank pack defaults
-pack-aware evaluation recognises valid specialisation
-pack authoring can create or revise a valid pack
-```
-
-Every implemented catalogue pack must include:
-
-```text
-showcase fixture
-exact prompt
-observable specialised behaviour
-behavioural evals
-core-vs-pack comparison
+accepted architecture/contracts and approved work outrank pack defaults
+pack-aware evaluation recognises valid specialisation without accepting real defects
+showcase and independent reuse case both exercise the specialisation
+pack authoring can create or revise the pack
+clean external installation works
 ```
 
 ## Exit criteria
 
-The project demonstrates broad engineering responsibility and specialisation rather than only one polished fixture.
+The project demonstrates broad engineering responsibility and specialisation rather than one polished fixture. Any pack described as ready has P6 implementation evidence, P7 differential evaluation and clean consumer installation evidence.
 
 ---
 
-# 25. Stage 19 — Configure and Validate Skill Installation
+# 27. Stage 20 — Validate Installation and Repository Integrity
 
-Define canonical installation with the Agent Skills CLI.
+Validate local repository integrity and clean consumer installation as **separate gates inside the same stage**.
+
+## Local/source-repository gate
 
 Validate:
 
 ```text
+repository contracts
+deterministic checks
 full installation
 selective installation
 skill self-containment
 skill-local references
 skill-local scripts
-no undocumented repository-relative runtime dependencies
 provider/tool prerequisites
 README commands
+benchmark/eval entry points
+no undocumented repository-relative runtime dependencies
 ```
 
-Local source-repository validation remains separate from consumer installation.
-
-## Exit criteria
-
-Every advertised skill can be installed selectively into a local test consumer and discovered by the target coding agent.
-
----
-
-# 26. Stage 20 — Clean External Installation Smoke Test
+## Clean external consumer gate
 
 Use a fresh consumer repository outside the source checkout.
 
@@ -1792,17 +2222,18 @@ perform a bounded engineering command
 run required deterministic tools
 resolve skill-local references
 produce expected benchmark evidence
+exercise representative Extension Pack installation when advertised
 ```
 
-The smoke test should expose accidental assumptions about source-repository paths or developer machine state.
+The external smoke test should expose accidental assumptions about source-repository paths or developer-machine state.
 
 ## Exit criteria
 
-The project works as an installable Agent Skills product, not only from its own checkout.
+Every advertised skill can be installed selectively into a clean consumer, discovered by the target coding agent and exercised without hidden source-checkout dependencies. Local validation and external installation results are reported separately.
 
 ---
 
-# 27. Stage 21 — Optional Pactwright Integration
+# 28. Stage 21 — Optional Pactwright Integration
 
 If useful, add:
 
@@ -1830,7 +2261,7 @@ Pactwright can resolve the relevant software-engineering capabilities without be
 
 ---
 
-# 28. Stage 22 — Register and Promote Maturity
+# 29. Stage 22 — Register and Promote Maturity
 
 Update the Production Skills registry as evidence advances:
 
@@ -1844,7 +2275,7 @@ proposed
 → mature
 ```
 
-Promotion is based on demonstrated behaviour.
+Promotion is based on demonstrated behaviour, not repository existence or planned architecture.
 
 For `mature`, require at least:
 
@@ -1856,8 +2287,8 @@ public README accurately reflects implementation
 primary examples include exact prompts
 domain benchmark operational
 regression fixtures operational
-Extension Pack architecture and catalogue represented
-implemented packs have showcases and behavioural evals
+Extension Pack architecture and curated catalogue represented
+implemented packs have P1–P7 evidence, showcases and behavioural evals
 pack-authoring capability exists
 core remains useful without packs
 clean consumer installation passes
@@ -1866,9 +2297,9 @@ quality claims are measured or explicitly marked unmeasured
 
 ---
 
-# 29. Stage 23 — Review Shared Abstraction Candidates
+# 30. Stage 23 — Review Shared Abstraction Candidates
 
-After implementation evidence exists, apply `shared-abstraction-process.md`.
+Only after implementation and benchmark evidence exists, apply `shared-abstraction-process.md` and compare independently reproduced needs with other mature Production Skills domains.
 
 For every candidate record:
 
@@ -1890,15 +2321,34 @@ not_recommended:
 
 Potential candidates should remain hypotheses until repeated evidence exists.
 
+Do not immediately extract:
+
+```text
+universal workflow engine
+universal artefact graph
+universal evaluator
+universal pack interpreter
+universal command runtime
+```
+
+Cross-project comparison during bootstrap generation may inform conformance and prevent known mistakes, but it must not be treated as evidence for a shared abstraction before the software-engineering implementation independently reproduces the need.
+
 ## Exit criteria
 
-The project contributes reusable family evidence without creating a central software-production runtime.
+The project contributes reusable family evidence without weakening software-native terminology or creating a central software-production runtime.
 
 ---
 
-# 30. Initial Research Questions for Later Stages
+# 31. Initial Research Questions for Later Stages
 
 The following questions should be answered by the staged bootstrap rather than assumed now.
+
+## Research foundation
+
+- Which knowledge dimensions matter most when comparing the foundational book candidates?
+- Which candidate books provide practical engineering decision models rather than broad programming advice?
+- Where do durable classic texts require qualification against current delivery, security or ecosystem practice?
+- Which important responsibilities are unlikely to be adequately represented by five books and must be deliberately covered in Stage 4?
 
 ## Scope
 
@@ -1934,6 +2384,8 @@ The following questions should be answered by the staged bootstrap rather than a
 - Should framework knowledge live in packs or external provider/community skills?
 - Can architecture packs compose safely with language packs without combinatorial complexity?
 - Which quality specialisations materially change workflow enough to justify packs?
+- Which specialist books can validly reuse core extraction evidence, and where is new direct examination needed?
+- How should the catalogue distinguish planned, researched, implemented, evaluated and ready packs?
 
 ## Examples
 
@@ -1950,7 +2402,7 @@ The following questions should be answered by the staged bootstrap rather than a
 
 ---
 
-# 31. Early Over-Engineering Risks
+# 32. Early Over-Engineering Risks
 
 The bootstrap should explicitly resist the following until core behaviour proves the need:
 
@@ -1968,6 +2420,8 @@ shared workflow engine
 multi-agent organisation framework
 one universal software quality score
 pack-combination solver
+central research database
+shared Extension Pack runtime
 ```
 
 These may become later research projects if repeated evidence demonstrates real leverage.
@@ -1988,11 +2442,31 @@ credible tests/evaluation
 
 ---
 
-# 32. Success Criterion
+# 33. Migration Note
 
-A successful `software-engineering-skills` bootstrap is not a generic coding checklist with Production Skills terminology added.
+This revision adopts the current Production Skills bootstrap research and Extension Pack processes before substantive software-engineering bootstrap execution has begun.
 
-It should encode enough software-specific research questions, change semantics, contract preservation, verification strategy, repair behaviour, Extension Pack design, example discovery and benchmark architecture that later sessions can execute one stage at a time without redesigning the project from scratch.
+Therefore:
+
+- Stage numbering is updated cleanly rather than preserved through compatibility aliases;
+- the existing software-specific change, contract, workflow, verification, execution-layer, example and benchmark responsibilities are retained;
+- the old broad professional-practice Stage 2 becomes the challenge-and-extension responsibility in Stage 4;
+- Seed → Five → Challenge becomes the explicit research foundation;
+- Extension Pack catalogue curation and P1–P5 are required before pack implementation;
+- P6–P7 occur only after the relevant core implementation exists;
+- the premature pre-scaffold cross-project abstraction-review stage is removed;
+- shared abstraction review remains the final evidence-backed stage;
+- local and clean external installation remain distinct gates within one installation/integrity stage.
+
+This migration changes the bootstrap specification, not project maturity and not evidence status. No research stage is considered completed by this document update.
+
+---
+
+# 34. Success Criterion
+
+A successful `software-engineering-skills` bootstrap is not a generic coding checklist with Production Skills terminology added, and it is not five books mechanically converted into five skills.
+
+It should encode enough evidence-qualified software-specific knowledge, change semantics, contract preservation, verification strategy, repair behaviour, Extension Pack research, example discovery and benchmark architecture that later sessions can execute one standalone stage at a time without redesigning the project from scratch.
 
 The resulting repository should eventually demonstrate this core behaviour:
 
@@ -2006,4 +2480,4 @@ understand the system
 → leave the software healthier or at least no worse than before
 ```
 
-Do not scaffold `software-engineering-skills` while generating this bootstrap specification. The bootstrap defines how the repository will be created.
+Do not scaffold `software-engineering-skills` while generating or updating this bootstrap specification. The bootstrap defines how the production repository will be researched, specified, created and proven.
