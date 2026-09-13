@@ -2,6 +2,7 @@
 
 **Date:** 13 September 2026  
 **P4 input commit:** `508a78546126bae1ce0542d8e97a1ba556f584db`  
+**P4 standards supplement:** `e3f523279fef45d9d4a55761f296711924d8cd03`  
 **Research:** P1–P5 complete at the stated evidence scopes  
 **Implementation:** planned  
 **Evaluation:** not run  
@@ -64,7 +65,7 @@ These are planned cases. DMT identifiers retain the source-qualified criteria; m
 | Case | Observable acceptance / preserved trait | Failure or negative case and bounded repair | Source criterion join |
 |---|---|---|---|
 | DMC01 — Activation / non-activation | Explicit applicable selection changes relevant migration reasoning; ordinary query optimisation without selection stays within its task | Pack creates a migration or extra mandatory artifacts for a query; remove irrelevant activation and preserve useful core work | P1 scope; DM06 / DMT06 |
-| DMC02 — History and semantic oracle | Existing supported values retain meaning; boundary examples distinguish units/null/unknown; valid intentional conversion is allowed | Counts match while amounts are wrong, or mapper and oracle share the same erroneous formula; repair conversion and discriminating oracle | DM05/08/09 / DMT05/08/09 |
+| DMC02 — History and semantic oracle | Existing supported values retain meaning; boundary examples distinguish units/null/unknown and applicable JSON consumer precision; valid intentional conversion is allowed | Counts match while amounts are wrong, or mapper and oracle share the same erroneous formula; repair conversion and discriminating oracle | DM05/08/09 / DMT05/08/09 |
 | DMC03 — Real bindings and evidence fidelity | Legacy/new adapter paths are actually exercised with relevant real engine semantics; substitutes are labelled | Tests call a disconnected helper or fake transaction; wire the actual path/add the missing boundary check | DM01/04 / DMT01/04 |
 | DMC04 — Mixed readers/writers | Relevant old/new and historical/intermediate states obey the supported contract | Old writer erases a new representation or new reader strands old rows; repair the precise synchronisation/sequence path | DM07/11 / DMT07/11 |
 | DMC05 — Interrupted/resumed batch | Crash/exception before or after progress/data commit resumes without omitted or double-transformed values | Checkpoint advances past uncommitted work; repair atomic/state-derived progress and rerun the fault case | DM12/14 / DMT12/14 |
@@ -78,7 +79,7 @@ These are planned cases. DMT identifiers retain the source-qualified criteria; m
 | DMC13 — Distinct reuse | Subscription labels/aliases/exceptions and legacy export receive their own correct treatment under the same profile | Invoice-specific copy ignores unknown labels or changes entitlement; repair mapping/consumer logic and rerun relevant case | DM05/08/09/11 / DMT05/08/09/11 |
 | DMC14 — Installation / local resources | Selected core plus pack works in a fresh consumer outside the source checkout; all required pack guidance resolves locally | A reference reaches into research logs, another pack or source tests; package the necessary guidance and repeat clean use | Family P6/P7; Stage 20 |
 
-All sixteen DMT criteria have an explicit acceptance join. The showcase and reuse must actually run; supplemental boundary/precedence/evaluator/refinement probes may use smaller fixtures appropriate to their specific question. Passing a path/field validator alone cannot establish these behaviours.
+All sixteen DMT criteria have an explicit acceptance join. The P4 standards supplement refines DMC02: where supported consumers decode JSON with limited numeric precision, exercise the actual accepted range/representation and reject silent rounding. This is a conditional preservation case, not permission to change the public type or impose a new universal range. The showcase and reuse must actually run; supplemental boundary/precedence/evaluator/refinement probes may use smaller fixtures appropriate to their specific question. Passing a path/field validator alone cannot establish these behaviours.
 
 ## P6/P7 implementation and comparison plan
 
