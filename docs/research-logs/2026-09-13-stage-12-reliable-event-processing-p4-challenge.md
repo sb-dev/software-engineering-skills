@@ -8,7 +8,7 @@
 
 Reviewed [P3's fourteen findings](2026-09-13-stage-12-reliable-event-processing-p3-extraction.md) and [EPK01–EPK08 coverage](2026-09-13-stage-12-reliable-event-processing-p2-corpus.md). The complete P4 requirement calls for independent specialist challenge, current authoritative semantics, separate disposition/standing, contrary cases and explicit gaps. The main challenges are whether broker delivery guarantees cover business effects, whether duplicate identity is sufficient, whether ordering survives recovery, and whether retry/dead-letter defaults preserve actual policy.
 
-Seven primary sources were examined. RabbitMQ, Apache Kafka, AWS and SQLite provide different implementation/practice perspectives; multiple pages from one organisation are not independent votes. Current product documentation establishes scoped semantics. AWS's idempotency article supplies practitioner design experience; its backoff article supplies a described simulation, not measured proof about this pack or an arbitrary workload. No formal AMQP/SQL standard was directly examined or substituted for the actual versioned implementation contract.
+Eight primary sources were examined, including a standards supplement from the final Stage 12 audit. RabbitMQ, Apache Kafka, AWS and SQLite provide different implementation/practice perspectives; multiple pages from one organisation are not independent votes. Current product documentation establishes scoped semantics. AWS's idempotency article supplies practitioner design experience; its backoff article supplies a described simulation, not measured proof about this pack or an arbitrary workload. No formal AMQP/SQL standard was directly examined or substituted for the actual versioned implementation contract.
 
 ## Source register
 
@@ -25,6 +25,12 @@ All sources retrieved 13 September 2026. Named sections are the actual examined 
 | ES07 [SQLite transactions](https://www.sqlite.org/lang_transaction.html) | Sections 2–3: single-writer/read-snapshot behaviour, busy commit and error-dependent rollback state, reassessed for consumer effect/identity storage | Current local-engine contract. Useful for the planned fixture; cannot establish broker/external atomicity or another database's concurrency |
 
 The separate Builders' Library timeout/retry URL redirected to a page with no retrievable text in this session. It is **not** counted as examined; ES06 supplies the actually read retry analysis. No unavailable source is used to assert a method or runtime setting.
+
+## Standards supplement and bounded impact review
+
+**ES08 — [RFC 9110 section 9.2.2, Idempotent Methods](https://www.rfc-editor.org/rfc/rfc9110.html#section-9.2.2)**, Standards Track/STD 97, June 2022; section read in full on 13 September 2026. HTTP idempotence concerns the intended effect; a repeated response need not be byte-identical. Automatic retry of a non-idempotent method requires the client to know the operation is idempotent or know the first attempt was not applied. This is a formal protocol constraint, not a guarantee about broker delivery.
+
+This supplements EP08/EP12/EP16 after the original P4/P5 commits. Disposition: **qualify**; standing: **supported protocol semantics** for HTTP effects. Assess the actual carrier API contract and required response meaning; do not infer retry permission from a method label alone, or reject a permitted changed response when the agreed effect/result meaning is preserved. P5 EPC06/EPC11 carry the conditional acceptance. Original evidence remains in Git history; no new corpus or universal response-cache requirement is introduced.
 
 ## Dispositions of all extracted findings
 
@@ -69,4 +75,4 @@ Remaining consumer-specific evidence includes broker/client versions/configurati
 
 ## P4 conformance
 
-Seven examined primary sources provide current implementation contracts, practitioner mechanisms and a bounded simulation study. All fourteen findings have separate disposition/standing; two added gaps have falsifiable criteria; contrary cases and inaccessible-source limits are explicit. All eight original coverage needs are addressed or bounded. Exit: **PASS**. Continue with P5's independent operational profile and predetermined showcase/reuse evaluation design.
+Eight examined primary sources provide current implementation contracts, practitioner mechanisms, a bounded simulation study and a formal HTTP standard. All fourteen findings have separate disposition/standing; two added gaps have falsifiable criteria; contrary cases and inaccessible-source limits are explicit. All eight original coverage needs are addressed or bounded. Exit: **PASS**. Continue with P5's independent operational profile and predetermined showcase/reuse evaluation design.
