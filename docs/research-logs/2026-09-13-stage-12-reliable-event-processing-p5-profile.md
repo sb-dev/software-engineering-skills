@@ -2,6 +2,7 @@
 
 **Date:** 13 September 2026  
 **P4 input commit:** `3c57e003aeb2aa1e912f3dd7ecf1b75e73300c19`  
+**P4 standards supplement:** `8e741cd1833686ae89a9f4de62f9db3b96e6bf3d`  
 **Research:** P1–P5 complete at the recorded scopes  
 **Implementation:** planned  
 **Evaluation:** not run  
@@ -76,6 +77,8 @@ The planned cases below cover all sixteen EPT criteria. Observed results must be
 | EPC13 bounded refinement / freshness | A planted wrong-identity or ack-order defect receives a targeted repair and affected re-verification | Rewrites unrelated architecture or reuses pre-edit green evidence; preserve valid work and refresh actual candidate results | EP02/03/08/11 / EPT02/03/08/11 |
 | EPC14 independent reuse | Parcel worker honours separate carrier effect/status contract and survives lost response/restart | Assumes local commit covers carrier or conflates identical new requests with retries; repair external identity/recovery boundary | EP08/12/14 / EPT08/12/14 |
 | EPC15 local and clean installation | Selected core+pack can run in a fresh consumer with local required guidance and disclosed tool prerequisites | Pack reads books/research logs/other pack/source-test paths; package necessary guidance and repeat external use | Family P6/P7; Stage 20 |
+
+The P4 HTTP standards supplement refines EPC06/EPC11: when the external carrier uses HTTP, assess the actual retry semantics and accepted result meaning. Do not demand byte-identical responses unless that stronger contract exists; do not automatically repeat a non-idempotent operation without the required semantic/non-application evidence. This preserves the showcase’s explicit repeat-result contract and adds no universal response-cache requirement.
 
 The two substantive briefs must run in both arms. Smaller supplemental probes can cover non-activation, precedence, evaluator behaviour, ordering/retention policy and targeted repair where those questions need a different bounded premise. Do not pretend the stock task exercises every conceivable messaging pattern.
 
