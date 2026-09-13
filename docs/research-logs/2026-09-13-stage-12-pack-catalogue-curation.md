@@ -3,7 +3,7 @@
 **Date:** 13 September 2026  
 **Branch:** `feat/bootstrap-2`  
 **Core design baseline:** `0ebb157cac31079d28cd89d4db373a522812fd6e`  
-**Status:** Catalogue selection complete; selected packs require their separate P1–P5 records. No pack is implemented or ready.
+**Status:** Catalogue selection complete; both selected packs have now completed separately committed P1–P5 research. See the [Stage 12 completion record](2026-09-13-stage-12-extension-packs-completion.md). No pack is implemented or ready.
 
 ## Inputs, method and acceptance
 
@@ -66,8 +66,8 @@ The pool supports neither a language-per-pack catalogue nor a claim that these t
 
 | Pack | Research | Implementation | Evaluation | Readiness | Required next work |
 |---|---|---|---|---|---|
-| `data-migration` | Selected; P1–P5 pending | Planned | Not run | Unproven | Separate P1 baseline, P2 five-book selection, P3 applicability/extraction, P4 challenge and P5 behaviour/evaluation commits |
-| `reliable-event-processing` | Selected; P1–P5 pending | Planned | Not run | Unproven | Same independent gates, with event-specific findings and evaluation; do not inherit the migration profile |
+| `data-migration` | P1–P5 complete | Planned | Not run | Unproven | [Qualified profile](2026-09-13-stage-12-data-migration-p5-profile.md); P6/P7 follow implemented core |
+| `reliable-event-processing` | P1–P5 complete | Planned | Not run | Unproven | [Qualified profile](2026-09-13-stage-12-reliable-event-processing-p5-profile.md); P6/P7 follow implemented core |
 
 No existing entry, supplied book, production example or installed interface is retired. These are new selected research tasks. The five user-supplied core books are available candidates; selection for each pack must separately justify exactly five contributions. Their availability does not automatically establish specialist applicability. No additional book acquisition or user substitution decision is assumed.
 
@@ -81,4 +81,4 @@ Installed packs must carry their necessary runtime guidance locally; source reus
 
 ## Curation conformance
 
-All 25 specified dimensions are explicitly assessed, with two additional alternatives testing project/core ownership. Coverage and marginal contribution are compared together; all rows consider reuse/depth, evaluation and overlap. Two selected needs have distinguishable outcomes; deferred scope remains visible. Existing-entry migration is not needed because no installed entries exist. The current family process and accepted core design were reviewed; no implementation or demonstration is claimed. Curation exit: **PASS**. Stage 12 remains **in progress** until both packs complete their separately committed P1–P5 records and the domain authoring contract is audited.
+All 25 specified dimensions are explicitly assessed, with two additional alternatives testing project/core ownership. Coverage and marginal contribution are compared together; all rows consider reuse/depth, evaluation and overlap. Two selected needs have distinguishable outcomes; deferred scope remains visible. Existing-entry migration is not needed because no installed entries exist. The current family process and accepted core design were reviewed; no implementation or demonstration is claimed. Curation exit: **PASS**. The initial curation commit left Stage 12 in progress. Both packs and the authoring contract have since completed research/design; the [final conformance record](2026-09-13-stage-12-extension-packs-completion.md) records the separate commits and remaining implementation gates.
